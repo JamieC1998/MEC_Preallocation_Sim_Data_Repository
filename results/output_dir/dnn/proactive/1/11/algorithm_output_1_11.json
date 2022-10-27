@@ -1,0 +1,4905 @@
+{
+	"application_count": 1,
+	"completed_application_count": 1,
+	"total_task_count": 193,
+	"finish_time": 760.562,
+	"completed_task_count": 193,
+	"completed_tasks": [
+		{
+			"task_name": "1_inception_v4_phantom_start",
+			"total_task_id": 0,
+			"application_id": 0,
+			"task_id": 0,
+			"data_in": 0,
+			"data_out": 0,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 0,
+			"input_upload_finish_time": 0,
+			"process_start_time": 1,
+			"process_finish_time": 2,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/data",
+			"total_task_id": 1,
+			"application_id": 0,
+			"task_id": 1,
+			"data_in": 0,
+			"data_out": 1.07281,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 2,
+			"input_upload_finish_time": 0,
+			"process_start_time": 3,
+			"process_finish_time": 4,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/conv1_3x3_s2",
+			"total_task_id": 2,
+			"application_id": 0,
+			"task_id": 2,
+			"data_in": 1.07281,
+			"data_out": 2.84173,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 4,
+			"input_upload_finish_time": 0,
+			"process_start_time": 5,
+			"process_finish_time": 5.1475,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/data"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/conv2_3x3_s1",
+			"total_task_id": 3,
+			"application_id": 0,
+			"task_id": 3,
+			"data_in": 2.84173,
+			"data_out": 2.76595,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 5.1475,
+			"input_upload_finish_time": 0,
+			"process_start_time": 6.1475,
+			"process_finish_time": 6.71932,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/conv1_3x3_s2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/conv3_3x3_s1",
+			"total_task_id": 4,
+			"application_id": 0,
+			"task_id": 4,
+			"data_in": 2.76595,
+			"data_out": 5.5319,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 6.71932,
+			"input_upload_finish_time": 0,
+			"process_start_time": 7.71932,
+			"process_finish_time": 8.7851,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/conv2_3x3_s1"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem1_3x3_s2",
+			"total_task_id": 6,
+			"application_id": 0,
+			"task_id": 6,
+			"data_in": 5.5319,
+			"data_out": 2.04634,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 8.7851,
+			"input_upload_finish_time": 0,
+			"process_start_time": 9.7851,
+			"process_finish_time": 10.616,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/conv3_3x3_s1"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem1_pool",
+			"total_task_id": 5,
+			"application_id": 0,
+			"task_id": 5,
+			"data_in": 5.5319,
+			"data_out": 3.41056,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 8.7851,
+			"input_upload_finish_time": 0,
+			"process_start_time": 11.616,
+			"process_finish_time": 12.616,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/conv3_3x3_s1"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem1",
+			"total_task_id": 7,
+			"application_id": 0,
+			"task_id": 7,
+			"data_in": 5.4569,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 12.616,
+			"input_upload_finish_time": 0,
+			"process_start_time": 13.616,
+			"process_finish_time": 14.616,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem1_3x3_s2",
+				"1_inception_v4_phantom_start/inception_stem1_pool"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem2_3x3_reduce",
+			"total_task_id": 8,
+			"application_id": 0,
+			"task_id": 8,
+			"data_in": 0,
+			"data_out": 3.87149,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 14.616,
+			"input_upload_finish_time": 0,
+			"process_start_time": 15.616,
+			"process_finish_time": 16.616,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem1"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem2_3x3",
+			"total_task_id": 9,
+			"application_id": 0,
+			"task_id": 9,
+			"data_in": 3.87149,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 16.616,
+			"input_upload_finish_time": 0,
+			"process_start_time": 17.616,
+			"process_finish_time": 18.616,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem2_3x3_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem2_1x7_reduce",
+			"total_task_id": 10,
+			"application_id": 0,
+			"task_id": 10,
+			"data_in": 0,
+			"data_out": 1.36422,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 15.616,
+			"input_upload_finish_time": 25.616,
+			"process_start_time": 25.616,
+			"process_finish_time": 25.6266,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem1"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["15.616", "25.616"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem2_1x7",
+			"total_task_id": 11,
+			"application_id": 0,
+			"task_id": 11,
+			"data_in": 1.36422,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 25.6266,
+			"input_upload_finish_time": 0,
+			"process_start_time": 26.6266,
+			"process_finish_time": 27.6266,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem2_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem2_7x1",
+			"total_task_id": 12,
+			"application_id": 0,
+			"task_id": 12,
+			"data_in": 0,
+			"data_out": 1.36422,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 27.6266,
+			"input_upload_finish_time": 0,
+			"process_start_time": 28.6266,
+			"process_finish_time": 28.6583,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem2_1x7"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem2_3x3_2",
+			"total_task_id": 13,
+			"application_id": 0,
+			"task_id": 13,
+			"data_in": 1.36422,
+			"data_out": 1.93574,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 28.6583,
+			"input_upload_finish_time": 0,
+			"process_start_time": 29.6583,
+			"process_finish_time": 29.7113,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem2_7x1"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem2",
+			"total_task_id": 14,
+			"application_id": 0,
+			"task_id": 14,
+			"data_in": 1.93574,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 30.7113,
+			"input_upload_finish_time": 40.7113,
+			"process_start_time": 40.7113,
+			"process_finish_time": 41.7113,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem2_3x3",
+				"1_inception_v4_phantom_start/inception_stem2_3x3_2"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["30.7113", "40.7113"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem3_pool",
+			"total_task_id": 16,
+			"application_id": 0,
+			"task_id": 16,
+			"data_in": 0,
+			"data_out": 0.9408,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 41.7113,
+			"input_upload_finish_time": 0,
+			"process_start_time": 42.7113,
+			"process_finish_time": 42.7241,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem3_3x3_s2",
+			"total_task_id": 15,
+			"application_id": 0,
+			"task_id": 15,
+			"data_in": 0,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 41.7113,
+			"input_upload_finish_time": 0,
+			"process_start_time": 42.7113,
+			"process_finish_time": 43.7113,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_stem3",
+			"total_task_id": 17,
+			"application_id": 0,
+			"task_id": 17,
+			"data_in": 2.8224,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 43.7113,
+			"input_upload_finish_time": 0,
+			"process_start_time": 44.7113,
+			"process_finish_time": 45.7113,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem3_3x3_s2",
+				"1_inception_v4_phantom_start/inception_stem3_pool"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_3x3_reduce",
+			"total_task_id": 19,
+			"application_id": 0,
+			"task_id": 19,
+			"data_in": 0,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 45.7113,
+			"input_upload_finish_time": 0,
+			"process_start_time": 46.7113,
+			"process_finish_time": 46.7247,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_1x1_2",
+			"total_task_id": 18,
+			"application_id": 0,
+			"task_id": 18,
+			"data_in": 0,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 45.7113,
+			"input_upload_finish_time": 0,
+			"process_start_time": 46.7113,
+			"process_finish_time": 46.7249,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_3x3",
+			"total_task_id": 20,
+			"application_id": 0,
+			"task_id": 20,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 46.7247,
+			"input_upload_finish_time": 0,
+			"process_start_time": 47.7247,
+			"process_finish_time": 48.7247,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_3x3_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_pool_ave",
+			"total_task_id": 24,
+			"application_id": 0,
+			"task_id": 24,
+			"data_in": 0,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 46.7113,
+			"input_upload_finish_time": 56.7113,
+			"process_start_time": 56.7113,
+			"process_finish_time": 56.7217,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem3"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["46.7113", "56.7113"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_3x3_2_reduce",
+			"total_task_id": 21,
+			"application_id": 0,
+			"task_id": 21,
+			"data_in": 0,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 46.7113,
+			"input_upload_finish_time": 56.7113,
+			"process_start_time": 56.7113,
+			"process_finish_time": 56.7247,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_stem3"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["46.7113", "56.7113"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_1x1",
+			"total_task_id": 25,
+			"application_id": 0,
+			"task_id": 25,
+			"data_in": 1.8816,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 56.7217,
+			"input_upload_finish_time": 0,
+			"process_start_time": 57.7217,
+			"process_finish_time": 58.7217,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_3x3_2",
+			"total_task_id": 22,
+			"application_id": 0,
+			"task_id": 22,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 56.7247,
+			"input_upload_finish_time": 0,
+			"process_start_time": 57.7247,
+			"process_finish_time": 58.7247,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_3x3_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_3x3_3",
+			"total_task_id": 23,
+			"application_id": 0,
+			"task_id": 23,
+			"data_in": 0,
+			"data_out": 0.4704,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 59.7247,
+			"input_upload_finish_time": 69.7247,
+			"process_start_time": 69.7247,
+			"process_finish_time": 69.9739,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_3x3_2"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["59.7247", "69.7247"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a1_concat",
+			"total_task_id": 26,
+			"application_id": 0,
+			"task_id": 26,
+			"data_in": 0.9408,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 70.9739,
+			"input_upload_finish_time": 84.1099,
+			"process_start_time": 84.1099,
+			"process_finish_time": 85.1099,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_1x1_2",
+				"1_inception_v4_phantom_start/inception_a1_3x3",
+				"1_inception_v4_phantom_start/inception_a1_1x1",
+				"1_inception_v4_phantom_start/inception_a1_3x3_3"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["70.9739", "80.9739"]
+				],
+				"2": [
+					["70.9739", "84.1099"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_3x3_reduce",
+			"total_task_id": 28,
+			"application_id": 0,
+			"task_id": 28,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 85.1099,
+			"input_upload_finish_time": 0,
+			"process_start_time": 86.1099,
+			"process_finish_time": 86.1233,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_1x1_2",
+			"total_task_id": 27,
+			"application_id": 0,
+			"task_id": 27,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 85.1099,
+			"input_upload_finish_time": 0,
+			"process_start_time": 86.1099,
+			"process_finish_time": 86.1235,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_3x3",
+			"total_task_id": 29,
+			"application_id": 0,
+			"task_id": 29,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 86.1233,
+			"input_upload_finish_time": 0,
+			"process_start_time": 87.1233,
+			"process_finish_time": 88.1233,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_3x3_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_pool_ave",
+			"total_task_id": 33,
+			"application_id": 0,
+			"task_id": 33,
+			"data_in": 1.8816,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 86.1099,
+			"input_upload_finish_time": 97.9474,
+			"process_start_time": 97.9474,
+			"process_finish_time": 97.9578,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_concat"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["86.1099", "97.9474"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_3x3_2_reduce",
+			"total_task_id": 30,
+			"application_id": 0,
+			"task_id": 30,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 86.1099,
+			"input_upload_finish_time": 97.9474,
+			"process_start_time": 97.9474,
+			"process_finish_time": 97.9608,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a1_concat"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["86.1099", "97.9474"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_1x1",
+			"total_task_id": 34,
+			"application_id": 0,
+			"task_id": 34,
+			"data_in": 1.8816,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 97.9578,
+			"input_upload_finish_time": 0,
+			"process_start_time": 98.9578,
+			"process_finish_time": 99.9578,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_3x3_2",
+			"total_task_id": 31,
+			"application_id": 0,
+			"task_id": 31,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 97.9608,
+			"input_upload_finish_time": 0,
+			"process_start_time": 98.9608,
+			"process_finish_time": 99.9608,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_3x3_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_3x3_3",
+			"total_task_id": 32,
+			"application_id": 0,
+			"task_id": 32,
+			"data_in": 0,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 99.9608,
+			"input_upload_finish_time": 0,
+			"process_start_time": 100.961,
+			"process_finish_time": 100.98,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_3x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a2_concat",
+			"total_task_id": 35,
+			"application_id": 0,
+			"task_id": 35,
+			"data_in": 0.9408,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 101.98,
+			"input_upload_finish_time": 112.44,
+			"process_start_time": 112.44,
+			"process_finish_time": 113.44,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_1x1_2",
+				"1_inception_v4_phantom_start/inception_a2_3x3",
+				"1_inception_v4_phantom_start/inception_a2_1x1",
+				"1_inception_v4_phantom_start/inception_a2_3x3_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["101.98", "112.44"]
+				],
+				"3": [
+					["101.98", "111.98"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_3x3_reduce",
+			"total_task_id": 37,
+			"application_id": 0,
+			"task_id": 37,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 113.44,
+			"input_upload_finish_time": 0,
+			"process_start_time": 114.44,
+			"process_finish_time": 114.453,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_1x1_2",
+			"total_task_id": 36,
+			"application_id": 0,
+			"task_id": 36,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 113.44,
+			"input_upload_finish_time": 0,
+			"process_start_time": 114.44,
+			"process_finish_time": 114.453,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_3x3",
+			"total_task_id": 38,
+			"application_id": 0,
+			"task_id": 38,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 114.453,
+			"input_upload_finish_time": 0,
+			"process_start_time": 115.453,
+			"process_finish_time": 116.453,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_3x3_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_pool_ave",
+			"total_task_id": 42,
+			"application_id": 0,
+			"task_id": 42,
+			"data_in": 1.8816,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 114.44,
+			"input_upload_finish_time": 126.277,
+			"process_start_time": 126.277,
+			"process_finish_time": 126.287,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_concat"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["114.44", "126.277"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_3x3_2_reduce",
+			"total_task_id": 39,
+			"application_id": 0,
+			"task_id": 39,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 114.44,
+			"input_upload_finish_time": 126.277,
+			"process_start_time": 126.277,
+			"process_finish_time": 126.29,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a2_concat"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["114.44", "126.277"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_1x1",
+			"total_task_id": 43,
+			"application_id": 0,
+			"task_id": 43,
+			"data_in": 1.8816,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 126.287,
+			"input_upload_finish_time": 0,
+			"process_start_time": 127.287,
+			"process_finish_time": 128.287,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_3x3_2",
+			"total_task_id": 40,
+			"application_id": 0,
+			"task_id": 40,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 126.29,
+			"input_upload_finish_time": 0,
+			"process_start_time": 127.29,
+			"process_finish_time": 128.29,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_3x3_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_3x3_3",
+			"total_task_id": 41,
+			"application_id": 0,
+			"task_id": 41,
+			"data_in": 0,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 128.29,
+			"input_upload_finish_time": 0,
+			"process_start_time": 129.29,
+			"process_finish_time": 129.31,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_3x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a3_concat",
+			"total_task_id": 44,
+			"application_id": 0,
+			"task_id": 44,
+			"data_in": 0.9408,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 130.31,
+			"input_upload_finish_time": 140.769,
+			"process_start_time": 140.769,
+			"process_finish_time": 141.769,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_1x1_2",
+				"1_inception_v4_phantom_start/inception_a3_3x3",
+				"1_inception_v4_phantom_start/inception_a3_1x1",
+				"1_inception_v4_phantom_start/inception_a3_3x3_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["130.31", "140.769"]
+				],
+				"3": [
+					["130.31", "140.31"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_3x3_reduce",
+			"total_task_id": 46,
+			"application_id": 0,
+			"task_id": 46,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 141.769,
+			"input_upload_finish_time": 0,
+			"process_start_time": 142.769,
+			"process_finish_time": 142.783,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_1x1_2",
+			"total_task_id": 45,
+			"application_id": 0,
+			"task_id": 45,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 141.769,
+			"input_upload_finish_time": 0,
+			"process_start_time": 142.769,
+			"process_finish_time": 142.783,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_3x3",
+			"total_task_id": 47,
+			"application_id": 0,
+			"task_id": 47,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 142.783,
+			"input_upload_finish_time": 0,
+			"process_start_time": 143.783,
+			"process_finish_time": 144.783,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_3x3_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_pool_ave",
+			"total_task_id": 51,
+			"application_id": 0,
+			"task_id": 51,
+			"data_in": 1.8816,
+			"data_out": 1.8816,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 142.769,
+			"input_upload_finish_time": 154.607,
+			"process_start_time": 154.607,
+			"process_finish_time": 154.617,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_concat"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["142.769", "154.607"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_3x3_2_reduce",
+			"total_task_id": 48,
+			"application_id": 0,
+			"task_id": 48,
+			"data_in": 1.8816,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 142.769,
+			"input_upload_finish_time": 154.607,
+			"process_start_time": 154.607,
+			"process_finish_time": 154.62,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a3_concat"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["142.769", "154.607"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_1x1",
+			"total_task_id": 52,
+			"application_id": 0,
+			"task_id": 52,
+			"data_in": 1.8816,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 154.617,
+			"input_upload_finish_time": 0,
+			"process_start_time": 155.617,
+			"process_finish_time": 156.617,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_3x3_2",
+			"total_task_id": 49,
+			"application_id": 0,
+			"task_id": 49,
+			"data_in": 0.4704,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 154.62,
+			"input_upload_finish_time": 0,
+			"process_start_time": 155.62,
+			"process_finish_time": 156.62,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_3x3_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_3x3_3",
+			"total_task_id": 50,
+			"application_id": 0,
+			"task_id": 50,
+			"data_in": 0,
+			"data_out": 0.4704,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 156.62,
+			"input_upload_finish_time": 0,
+			"process_start_time": 157.62,
+			"process_finish_time": 157.64,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_3x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_a4_concat",
+			"total_task_id": 53,
+			"application_id": 0,
+			"task_id": 53,
+			"data_in": 0.9408,
+			"data_out": 1.8816,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 158.64,
+			"input_upload_finish_time": 181.776,
+			"process_start_time": 181.776,
+			"process_finish_time": 182.776,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_1x1_2",
+				"1_inception_v4_phantom_start/inception_a4_3x3",
+				"1_inception_v4_phantom_start/inception_a4_1x1",
+				"1_inception_v4_phantom_start/inception_a4_3x3_3"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["158.64", "171.776"],
+					["171.776", "181.776"]
+				],
+				"1": [
+					["158.64", "171.776"]
+				],
+				"3": [
+					["158.64", "168.64"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_a_3x3",
+			"total_task_id": 54,
+			"application_id": 0,
+			"task_id": 54,
+			"data_in": 1.8816,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 182.776,
+			"input_upload_finish_time": 0,
+			"process_start_time": 183.776,
+			"process_finish_time": 184.788,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_a_pool",
+			"total_task_id": 58,
+			"application_id": 0,
+			"task_id": 58,
+			"data_in": 1.8816,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 183.776,
+			"input_upload_finish_time": 206.32,
+			"process_start_time": 206.32,
+			"process_finish_time": 206.326,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["183.776", "206.32"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_a_3x3_2_reduce",
+			"total_task_id": 55,
+			"application_id": 0,
+			"task_id": 55,
+			"data_in": 1.8816,
+			"data_out": 1.0976,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 183.776,
+			"input_upload_finish_time": 206.32,
+			"process_start_time": 206.32,
+			"process_finish_time": 206.404,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_a4_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["183.776", "206.32"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_a_3x3_2",
+			"total_task_id": 56,
+			"application_id": 0,
+			"task_id": 56,
+			"data_in": 1.0976,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 206.404,
+			"input_upload_finish_time": 0,
+			"process_start_time": 207.404,
+			"process_finish_time": 208.404,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_a_3x3_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_a_3x3_3",
+			"total_task_id": 57,
+			"application_id": 0,
+			"task_id": 57,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 208.404,
+			"input_upload_finish_time": 0,
+			"process_start_time": 209.404,
+			"process_finish_time": 209.436,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_a_3x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_a_concat",
+			"total_task_id": 59,
+			"application_id": 0,
+			"task_id": 59,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 210.436,
+			"input_upload_finish_time": 223.396,
+			"process_start_time": 223.396,
+			"process_finish_time": 224.396,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_a_3x3",
+				"1_inception_v4_phantom_start/reduction_a_pool",
+				"1_inception_v4_phantom_start/reduction_a_3x3_3"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["210.436", "223.396"]
+				],
+				"4": [
+					["210.436", "222.409"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_1x1_2",
+			"total_task_id": 60,
+			"application_id": 0,
+			"task_id": 60,
+			"data_in": 1.18374,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 224.396,
+			"input_upload_finish_time": 0,
+			"process_start_time": 225.396,
+			"process_finish_time": 225.721,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_a_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_1x7_reduce",
+			"total_task_id": 61,
+			"application_id": 0,
+			"task_id": 61,
+			"data_in": 1.18374,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 225.396,
+			"input_upload_finish_time": 243.287,
+			"process_start_time": 243.287,
+			"process_finish_time": 243.291,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_a_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["225.396", "243.287"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_pool_ave",
+			"total_task_id": 69,
+			"application_id": 0,
+			"task_id": 69,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 225.396,
+			"input_upload_finish_time": 243.287,
+			"process_start_time": 243.287,
+			"process_finish_time": 243.294,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_a_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["225.396", "243.287"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_7x1_2_reduce",
+			"total_task_id": 64,
+			"application_id": 0,
+			"task_id": 64,
+			"data_in": 1.18374,
+			"data_out": 0.221952,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 225.396,
+			"input_upload_finish_time": 243.287,
+			"process_start_time": 243.287,
+			"process_finish_time": 243.303,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_a_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["225.396", "243.287"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_1x7",
+			"total_task_id": 62,
+			"application_id": 0,
+			"task_id": 62,
+			"data_in": 0.258944,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 243.291,
+			"input_upload_finish_time": 0,
+			"process_start_time": 244.291,
+			"process_finish_time": 245.291,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_1x1",
+			"total_task_id": 70,
+			"application_id": 0,
+			"task_id": 70,
+			"data_in": 1.18374,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 243.294,
+			"input_upload_finish_time": 0,
+			"process_start_time": 244.294,
+			"process_finish_time": 245.294,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_7x1",
+			"total_task_id": 63,
+			"application_id": 0,
+			"task_id": 63,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 245.291,
+			"input_upload_finish_time": 0,
+			"process_start_time": 246.291,
+			"process_finish_time": 246.315,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_1x7"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_7x1_2",
+			"total_task_id": 65,
+			"application_id": 0,
+			"task_id": 65,
+			"data_in": 0.221952,
+			"data_out": 0,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 244.303,
+			"input_upload_finish_time": 255.783,
+			"process_start_time": 255.783,
+			"process_finish_time": 256.783,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_7x1_2_reduce"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["244.303", "255.783"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_1x7_2",
+			"total_task_id": 66,
+			"application_id": 0,
+			"task_id": 66,
+			"data_in": 0,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 256.783,
+			"input_upload_finish_time": 0,
+			"process_start_time": 257.783,
+			"process_finish_time": 257.827,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_7x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_7x1_3",
+			"total_task_id": 67,
+			"application_id": 0,
+			"task_id": 67,
+			"data_in": 0.258944,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 257.827,
+			"input_upload_finish_time": 0,
+			"process_start_time": 258.827,
+			"process_finish_time": 259.094,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_1x7_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_1x7_3",
+			"total_task_id": 68,
+			"application_id": 0,
+			"task_id": 68,
+			"data_in": 0.258944,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 259.094,
+			"input_upload_finish_time": 0,
+			"process_start_time": 260.094,
+			"process_finish_time": 260.151,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_7x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b1_concat",
+			"total_task_id": 71,
+			"application_id": 0,
+			"task_id": 71,
+			"data_in": 1.03578,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 261.151,
+			"input_upload_finish_time": 273.124,
+			"process_start_time": 273.124,
+			"process_finish_time": 274.124,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_1x1_2",
+				"1_inception_v4_phantom_start/inception_b1_1x1",
+				"1_inception_v4_phantom_start/inception_b1_7x1",
+				"1_inception_v4_phantom_start/inception_b1_1x7_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["261.151", "271.151"]
+				],
+				"4": [
+					["261.151", "273.124"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_1x1_2",
+			"total_task_id": 72,
+			"application_id": 0,
+			"task_id": 72,
+			"data_in": 1.18374,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 274.124,
+			"input_upload_finish_time": 0,
+			"process_start_time": 275.124,
+			"process_finish_time": 275.449,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_1x7_reduce",
+			"total_task_id": 73,
+			"application_id": 0,
+			"task_id": 73,
+			"data_in": 1.18374,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 275.124,
+			"input_upload_finish_time": 293.015,
+			"process_start_time": 293.015,
+			"process_finish_time": 293.019,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["275.124", "293.015"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_pool_ave",
+			"total_task_id": 81,
+			"application_id": 0,
+			"task_id": 81,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 275.124,
+			"input_upload_finish_time": 293.015,
+			"process_start_time": 293.015,
+			"process_finish_time": 293.022,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["275.124", "293.015"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_7x1_2_reduce",
+			"total_task_id": 76,
+			"application_id": 0,
+			"task_id": 76,
+			"data_in": 1.18374,
+			"data_out": 0.221952,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 275.124,
+			"input_upload_finish_time": 293.015,
+			"process_start_time": 293.015,
+			"process_finish_time": 293.031,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b1_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["275.124", "293.015"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_1x7",
+			"total_task_id": 74,
+			"application_id": 0,
+			"task_id": 74,
+			"data_in": 0.258944,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 293.019,
+			"input_upload_finish_time": 0,
+			"process_start_time": 294.019,
+			"process_finish_time": 295.019,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_1x1",
+			"total_task_id": 82,
+			"application_id": 0,
+			"task_id": 82,
+			"data_in": 1.18374,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 293.022,
+			"input_upload_finish_time": 0,
+			"process_start_time": 294.022,
+			"process_finish_time": 295.022,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_7x1_2",
+			"total_task_id": 77,
+			"application_id": 0,
+			"task_id": 77,
+			"data_in": 0.221952,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 293.031,
+			"input_upload_finish_time": 0,
+			"process_start_time": 294.031,
+			"process_finish_time": 295.031,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_7x1_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_1x7_2",
+			"total_task_id": 78,
+			"application_id": 0,
+			"task_id": 78,
+			"data_in": 0,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 295.031,
+			"input_upload_finish_time": 0,
+			"process_start_time": 296.031,
+			"process_finish_time": 296.035,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_7x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_7x1",
+			"total_task_id": 75,
+			"application_id": 0,
+			"task_id": 75,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 295.019,
+			"input_upload_finish_time": 0,
+			"process_start_time": 296.019,
+			"process_finish_time": 296.043,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_1x7"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_7x1_3",
+			"total_task_id": 79,
+			"application_id": 0,
+			"task_id": 79,
+			"data_in": 0.258944,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 296.035,
+			"input_upload_finish_time": 0,
+			"process_start_time": 297.035,
+			"process_finish_time": 297.056,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_1x7_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_1x7_3",
+			"total_task_id": 80,
+			"application_id": 0,
+			"task_id": 80,
+			"data_in": 0.258944,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 297.056,
+			"input_upload_finish_time": 0,
+			"process_start_time": 298.056,
+			"process_finish_time": 298.06,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_7x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b2_concat",
+			"total_task_id": 83,
+			"application_id": 0,
+			"task_id": 83,
+			"data_in": 1.03578,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 299.06,
+			"input_upload_finish_time": 311.033,
+			"process_start_time": 311.033,
+			"process_finish_time": 312.033,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_1x1_2",
+				"1_inception_v4_phantom_start/inception_b2_1x1",
+				"1_inception_v4_phantom_start/inception_b2_7x1",
+				"1_inception_v4_phantom_start/inception_b2_1x7_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["299.06", "309.06"]
+				],
+				"4": [
+					["299.06", "311.033"]
+				],
+				"3": [
+					["299.06", "311.033"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_1x1_2",
+			"total_task_id": 84,
+			"application_id": 0,
+			"task_id": 84,
+			"data_in": 1.18374,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 312.033,
+			"input_upload_finish_time": 0,
+			"process_start_time": 313.033,
+			"process_finish_time": 313.359,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_1x7_reduce",
+			"total_task_id": 85,
+			"application_id": 0,
+			"task_id": 85,
+			"data_in": 1.18374,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 313.033,
+			"input_upload_finish_time": 330.925,
+			"process_start_time": 330.925,
+			"process_finish_time": 330.929,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["313.033", "330.925"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_pool_ave",
+			"total_task_id": 93,
+			"application_id": 0,
+			"task_id": 93,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 313.033,
+			"input_upload_finish_time": 330.925,
+			"process_start_time": 330.925,
+			"process_finish_time": 330.931,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["313.033", "330.925"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_7x1_2_reduce",
+			"total_task_id": 88,
+			"application_id": 0,
+			"task_id": 88,
+			"data_in": 1.18374,
+			"data_out": 0.221952,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 313.033,
+			"input_upload_finish_time": 330.925,
+			"process_start_time": 330.925,
+			"process_finish_time": 330.941,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b2_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["313.033", "330.925"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_1x1",
+			"total_task_id": 94,
+			"application_id": 0,
+			"task_id": 94,
+			"data_in": 1.18374,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 330.931,
+			"input_upload_finish_time": 0,
+			"process_start_time": 331.931,
+			"process_finish_time": 332.931,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_7x1_2",
+			"total_task_id": 89,
+			"application_id": 0,
+			"task_id": 89,
+			"data_in": 0.221952,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 330.941,
+			"input_upload_finish_time": 0,
+			"process_start_time": 331.941,
+			"process_finish_time": 332.941,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_7x1_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_1x7",
+			"total_task_id": 86,
+			"application_id": 0,
+			"task_id": 86,
+			"data_in": 0.258944,
+			"data_out": 0,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 331.929,
+			"input_upload_finish_time": 343.655,
+			"process_start_time": 343.655,
+			"process_finish_time": 344.655,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_1x7_reduce"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["331.929", "343.655"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_7x1",
+			"total_task_id": 87,
+			"application_id": 0,
+			"task_id": 87,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 344.655,
+			"input_upload_finish_time": 0,
+			"process_start_time": 345.655,
+			"process_finish_time": 345.96,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_1x7"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_1x7_2",
+			"total_task_id": 90,
+			"application_id": 0,
+			"task_id": 90,
+			"data_in": 0,
+			"data_out": 0.258944,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 345.655,
+			"input_upload_finish_time": 355.655,
+			"process_start_time": 355.655,
+			"process_finish_time": 355.699,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_7x1_2"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["345.655", "355.655"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_7x1_3",
+			"total_task_id": 91,
+			"application_id": 0,
+			"task_id": 91,
+			"data_in": 0.258944,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 355.699,
+			"input_upload_finish_time": 0,
+			"process_start_time": 356.699,
+			"process_finish_time": 356.967,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_1x7_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_1x7_3",
+			"total_task_id": 92,
+			"application_id": 0,
+			"task_id": 92,
+			"data_in": 0.258944,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 356.967,
+			"input_upload_finish_time": 0,
+			"process_start_time": 357.967,
+			"process_finish_time": 358.023,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_7x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b3_concat",
+			"total_task_id": 95,
+			"application_id": 0,
+			"task_id": 95,
+			"data_in": 1.03578,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 359.023,
+			"input_upload_finish_time": 369.023,
+			"process_start_time": 369.023,
+			"process_finish_time": 370.023,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_1x1_2",
+				"1_inception_v4_phantom_start/inception_b3_1x1",
+				"1_inception_v4_phantom_start/inception_b3_7x1",
+				"1_inception_v4_phantom_start/inception_b3_1x7_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["359.023", "369.023"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_1x1_2",
+			"total_task_id": 96,
+			"application_id": 0,
+			"task_id": 96,
+			"data_in": 1.18374,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 370.023,
+			"input_upload_finish_time": 0,
+			"process_start_time": 371.023,
+			"process_finish_time": 371.349,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_1x7_reduce",
+			"total_task_id": 97,
+			"application_id": 0,
+			"task_id": 97,
+			"data_in": 1.18374,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 371.023,
+			"input_upload_finish_time": 388.914,
+			"process_start_time": 388.914,
+			"process_finish_time": 388.918,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["371.023", "388.914"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_pool_ave",
+			"total_task_id": 105,
+			"application_id": 0,
+			"task_id": 105,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 371.023,
+			"input_upload_finish_time": 388.914,
+			"process_start_time": 388.914,
+			"process_finish_time": 388.921,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["371.023", "388.914"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_7x1_2_reduce",
+			"total_task_id": 100,
+			"application_id": 0,
+			"task_id": 100,
+			"data_in": 1.18374,
+			"data_out": 0.221952,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 371.023,
+			"input_upload_finish_time": 388.914,
+			"process_start_time": 388.914,
+			"process_finish_time": 388.93,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b3_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["371.023", "388.914"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_1x7",
+			"total_task_id": 98,
+			"application_id": 0,
+			"task_id": 98,
+			"data_in": 0.258944,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 388.918,
+			"input_upload_finish_time": 0,
+			"process_start_time": 389.918,
+			"process_finish_time": 390.918,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_1x1",
+			"total_task_id": 106,
+			"application_id": 0,
+			"task_id": 106,
+			"data_in": 1.18374,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 388.921,
+			"input_upload_finish_time": 0,
+			"process_start_time": 389.921,
+			"process_finish_time": 390.921,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_7x1_2",
+			"total_task_id": 101,
+			"application_id": 0,
+			"task_id": 101,
+			"data_in": 0.221952,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 388.93,
+			"input_upload_finish_time": 0,
+			"process_start_time": 389.93,
+			"process_finish_time": 390.93,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_7x1_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_1x7_2",
+			"total_task_id": 102,
+			"application_id": 0,
+			"task_id": 102,
+			"data_in": 0,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 390.93,
+			"input_upload_finish_time": 0,
+			"process_start_time": 391.93,
+			"process_finish_time": 391.934,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_7x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_7x1",
+			"total_task_id": 99,
+			"application_id": 0,
+			"task_id": 99,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 390.918,
+			"input_upload_finish_time": 0,
+			"process_start_time": 391.918,
+			"process_finish_time": 391.942,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_1x7"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_7x1_3",
+			"total_task_id": 103,
+			"application_id": 0,
+			"task_id": 103,
+			"data_in": 0.258944,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 391.934,
+			"input_upload_finish_time": 0,
+			"process_start_time": 392.934,
+			"process_finish_time": 392.955,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_1x7_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_1x7_3",
+			"total_task_id": 104,
+			"application_id": 0,
+			"task_id": 104,
+			"data_in": 0.258944,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 392.955,
+			"input_upload_finish_time": 0,
+			"process_start_time": 393.955,
+			"process_finish_time": 393.96,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_7x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b4_concat",
+			"total_task_id": 107,
+			"application_id": 0,
+			"task_id": 107,
+			"data_in": 1.03578,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 394.96,
+			"input_upload_finish_time": 406.933,
+			"process_start_time": 406.933,
+			"process_finish_time": 407.933,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_1x1_2",
+				"1_inception_v4_phantom_start/inception_b4_1x1",
+				"1_inception_v4_phantom_start/inception_b4_7x1",
+				"1_inception_v4_phantom_start/inception_b4_1x7_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["394.96", "404.96"]
+				],
+				"4": [
+					["394.96", "406.933"]
+				],
+				"3": [
+					["394.96", "406.933"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_1x1_2",
+			"total_task_id": 108,
+			"application_id": 0,
+			"task_id": 108,
+			"data_in": 1.18374,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 407.933,
+			"input_upload_finish_time": 0,
+			"process_start_time": 408.933,
+			"process_finish_time": 409.258,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_1x7_reduce",
+			"total_task_id": 109,
+			"application_id": 0,
+			"task_id": 109,
+			"data_in": 1.18374,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 408.933,
+			"input_upload_finish_time": 426.824,
+			"process_start_time": 426.824,
+			"process_finish_time": 426.828,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["408.933", "426.824"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_pool_ave",
+			"total_task_id": 117,
+			"application_id": 0,
+			"task_id": 117,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 408.933,
+			"input_upload_finish_time": 426.824,
+			"process_start_time": 426.824,
+			"process_finish_time": 426.831,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["408.933", "426.824"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_7x1_2_reduce",
+			"total_task_id": 112,
+			"application_id": 0,
+			"task_id": 112,
+			"data_in": 1.18374,
+			"data_out": 0.221952,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 408.933,
+			"input_upload_finish_time": 426.824,
+			"process_start_time": 426.824,
+			"process_finish_time": 426.84,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b4_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["408.933", "426.824"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_1x7",
+			"total_task_id": 110,
+			"application_id": 0,
+			"task_id": 110,
+			"data_in": 0.258944,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 426.828,
+			"input_upload_finish_time": 0,
+			"process_start_time": 427.828,
+			"process_finish_time": 428.828,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_1x1",
+			"total_task_id": 118,
+			"application_id": 0,
+			"task_id": 118,
+			"data_in": 1.18374,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 426.831,
+			"input_upload_finish_time": 0,
+			"process_start_time": 427.831,
+			"process_finish_time": 428.831,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_7x1_2",
+			"total_task_id": 113,
+			"application_id": 0,
+			"task_id": 113,
+			"data_in": 0.221952,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 426.84,
+			"input_upload_finish_time": 0,
+			"process_start_time": 427.84,
+			"process_finish_time": 428.84,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_7x1_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_7x1",
+			"total_task_id": 111,
+			"application_id": 0,
+			"task_id": 111,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 428.828,
+			"input_upload_finish_time": 0,
+			"process_start_time": 429.828,
+			"process_finish_time": 429.852,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_1x7"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_1x7_2",
+			"total_task_id": 114,
+			"application_id": 0,
+			"task_id": 114,
+			"data_in": 0,
+			"data_out": 0.258944,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 429.84,
+			"input_upload_finish_time": 439.84,
+			"process_start_time": 439.84,
+			"process_finish_time": 439.884,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_7x1_2"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["429.84", "439.84"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_7x1_3",
+			"total_task_id": 115,
+			"application_id": 0,
+			"task_id": 115,
+			"data_in": 0.258944,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 439.884,
+			"input_upload_finish_time": 0,
+			"process_start_time": 440.884,
+			"process_finish_time": 441.152,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_1x7_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_1x7_3",
+			"total_task_id": 116,
+			"application_id": 0,
+			"task_id": 116,
+			"data_in": 0.258944,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 441.152,
+			"input_upload_finish_time": 0,
+			"process_start_time": 442.152,
+			"process_finish_time": 442.208,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_7x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b5_concat",
+			"total_task_id": 119,
+			"application_id": 0,
+			"task_id": 119,
+			"data_in": 1.03578,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 443.208,
+			"input_upload_finish_time": 455.181,
+			"process_start_time": 455.181,
+			"process_finish_time": 456.181,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_1x1_2",
+				"1_inception_v4_phantom_start/inception_b5_1x1",
+				"1_inception_v4_phantom_start/inception_b5_7x1",
+				"1_inception_v4_phantom_start/inception_b5_1x7_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["443.208", "453.208"]
+				],
+				"4": [
+					["443.208", "455.181"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_1x1_2",
+			"total_task_id": 120,
+			"application_id": 0,
+			"task_id": 120,
+			"data_in": 1.18374,
+			"data_out": 0.147968,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 456.181,
+			"input_upload_finish_time": 0,
+			"process_start_time": 457.181,
+			"process_finish_time": 457.311,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_1x7_reduce",
+			"total_task_id": 121,
+			"application_id": 0,
+			"task_id": 121,
+			"data_in": 1.18374,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 457.181,
+			"input_upload_finish_time": 475.072,
+			"process_start_time": 475.072,
+			"process_finish_time": 475.076,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["457.181", "475.072"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_pool_ave",
+			"total_task_id": 129,
+			"application_id": 0,
+			"task_id": 129,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 457.181,
+			"input_upload_finish_time": 475.072,
+			"process_start_time": 475.072,
+			"process_finish_time": 475.079,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["457.181", "475.072"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_7x1_2_reduce",
+			"total_task_id": 124,
+			"application_id": 0,
+			"task_id": 124,
+			"data_in": 1.18374,
+			"data_out": 0.221952,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 457.181,
+			"input_upload_finish_time": 475.072,
+			"process_start_time": 475.072,
+			"process_finish_time": 475.088,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b5_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["457.181", "475.072"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_1x7",
+			"total_task_id": 122,
+			"application_id": 0,
+			"task_id": 122,
+			"data_in": 0.258944,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 475.076,
+			"input_upload_finish_time": 0,
+			"process_start_time": 476.076,
+			"process_finish_time": 477.076,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_1x1",
+			"total_task_id": 130,
+			"application_id": 0,
+			"task_id": 130,
+			"data_in": 1.18374,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 475.079,
+			"input_upload_finish_time": 0,
+			"process_start_time": 476.079,
+			"process_finish_time": 477.079,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_7x1_2",
+			"total_task_id": 125,
+			"application_id": 0,
+			"task_id": 125,
+			"data_in": 0.221952,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 475.088,
+			"input_upload_finish_time": 0,
+			"process_start_time": 476.088,
+			"process_finish_time": 477.088,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_7x1_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_1x7_2",
+			"total_task_id": 126,
+			"application_id": 0,
+			"task_id": 126,
+			"data_in": 0,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 477.088,
+			"input_upload_finish_time": 0,
+			"process_start_time": 478.088,
+			"process_finish_time": 478.092,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_7x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_7x1",
+			"total_task_id": 123,
+			"application_id": 0,
+			"task_id": 123,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 478.076,
+			"input_upload_finish_time": 488.076,
+			"process_start_time": 488.076,
+			"process_finish_time": 488.381,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_1x7"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["478.076", "488.076"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_7x1_3",
+			"total_task_id": 127,
+			"application_id": 0,
+			"task_id": 127,
+			"data_in": 0.258944,
+			"data_out": 0.258944,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 479.092,
+			"input_upload_finish_time": 490.818,
+			"process_start_time": 490.818,
+			"process_finish_time": 491.086,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_1x7_2"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["479.092", "490.818"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_1x7_3",
+			"total_task_id": 128,
+			"application_id": 0,
+			"task_id": 128,
+			"data_in": 0.258944,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 491.086,
+			"input_upload_finish_time": 0,
+			"process_start_time": 492.086,
+			"process_finish_time": 492.142,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_7x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b6_concat",
+			"total_task_id": 131,
+			"application_id": 0,
+			"task_id": 131,
+			"data_in": 0.73984,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 493.142,
+			"input_upload_finish_time": 503.142,
+			"process_start_time": 503.142,
+			"process_finish_time": 504.142,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_1x1_2",
+				"1_inception_v4_phantom_start/inception_b6_1x1",
+				"1_inception_v4_phantom_start/inception_b6_7x1",
+				"1_inception_v4_phantom_start/inception_b6_1x7_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["493.142", "503.142"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_1x1_2",
+			"total_task_id": 132,
+			"application_id": 0,
+			"task_id": 132,
+			"data_in": 1.18374,
+			"data_out": 0.443904,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 504.142,
+			"input_upload_finish_time": 0,
+			"process_start_time": 505.142,
+			"process_finish_time": 505.468,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_1x7_reduce",
+			"total_task_id": 133,
+			"application_id": 0,
+			"task_id": 133,
+			"data_in": 1.18374,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 505.142,
+			"input_upload_finish_time": 523.034,
+			"process_start_time": 523.034,
+			"process_finish_time": 523.037,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["505.142", "523.034"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_pool_ave",
+			"total_task_id": 141,
+			"application_id": 0,
+			"task_id": 141,
+			"data_in": 1.18374,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 505.142,
+			"input_upload_finish_time": 523.034,
+			"process_start_time": 523.034,
+			"process_finish_time": 523.04,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["505.142", "523.034"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_7x1_2_reduce",
+			"total_task_id": 136,
+			"application_id": 0,
+			"task_id": 136,
+			"data_in": 1.18374,
+			"data_out": 0.221952,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 505.142,
+			"input_upload_finish_time": 523.034,
+			"process_start_time": 523.034,
+			"process_finish_time": 523.05,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b6_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["505.142", "523.034"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_1x7",
+			"total_task_id": 134,
+			"application_id": 0,
+			"task_id": 134,
+			"data_in": 0.258944,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 523.037,
+			"input_upload_finish_time": 0,
+			"process_start_time": 524.037,
+			"process_finish_time": 525.037,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_1x1",
+			"total_task_id": 142,
+			"application_id": 0,
+			"task_id": 142,
+			"data_in": 1.18374,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 523.04,
+			"input_upload_finish_time": 0,
+			"process_start_time": 524.04,
+			"process_finish_time": 525.04,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_7x1_2",
+			"total_task_id": 137,
+			"application_id": 0,
+			"task_id": 137,
+			"data_in": 0.221952,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 523.05,
+			"input_upload_finish_time": 0,
+			"process_start_time": 524.05,
+			"process_finish_time": 525.05,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_7x1_2_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_1x7_2",
+			"total_task_id": 138,
+			"application_id": 0,
+			"task_id": 138,
+			"data_in": 0,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 525.05,
+			"input_upload_finish_time": 0,
+			"process_start_time": 526.05,
+			"process_finish_time": 526.053,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_7x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_7x1",
+			"total_task_id": 135,
+			"application_id": 0,
+			"task_id": 135,
+			"data_in": 0,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 525.037,
+			"input_upload_finish_time": 0,
+			"process_start_time": 526.037,
+			"process_finish_time": 526.062,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_1x7"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_7x1_3",
+			"total_task_id": 139,
+			"application_id": 0,
+			"task_id": 139,
+			"data_in": 0.258944,
+			"data_out": 0.258944,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 526.053,
+			"input_upload_finish_time": 0,
+			"process_start_time": 527.053,
+			"process_finish_time": 527.074,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_1x7_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_1x7_3",
+			"total_task_id": 140,
+			"application_id": 0,
+			"task_id": 140,
+			"data_in": 0.258944,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 527.074,
+			"input_upload_finish_time": 0,
+			"process_start_time": 528.074,
+			"process_finish_time": 528.079,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_7x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_b7_concat",
+			"total_task_id": 143,
+			"application_id": 0,
+			"task_id": 143,
+			"data_in": 1.03578,
+			"data_out": 1.18374,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 529.079,
+			"input_upload_finish_time": 541.052,
+			"process_start_time": 541.052,
+			"process_finish_time": 542.052,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_1x1_2",
+				"1_inception_v4_phantom_start/inception_b7_1x1",
+				"1_inception_v4_phantom_start/inception_b7_7x1",
+				"1_inception_v4_phantom_start/inception_b7_1x7_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["529.079", "539.079"]
+				],
+				"4": [
+					["529.079", "541.052"]
+				],
+				"3": [
+					["529.079", "541.052"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_3x3_reduce",
+			"total_task_id": 144,
+			"application_id": 0,
+			"task_id": 144,
+			"data_in": 1.18374,
+			"data_out": 0.049152,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 542.052,
+			"input_upload_finish_time": 0,
+			"process_start_time": 543.052,
+			"process_finish_time": 543.14,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_3x3",
+			"total_task_id": 145,
+			"application_id": 0,
+			"task_id": 145,
+			"data_in": 0.049152,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 543.14,
+			"input_upload_finish_time": 0,
+			"process_start_time": 544.14,
+			"process_finish_time": 545.14,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_3x3_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_pool",
+			"total_task_id": 150,
+			"application_id": 0,
+			"task_id": 150,
+			"data_in": 1.18374,
+			"data_out": 0.262144,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 543.052,
+			"input_upload_finish_time": 560.944,
+			"process_start_time": 560.944,
+			"process_finish_time": 560.947,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["543.052", "560.944"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_1x7_reduce",
+			"total_task_id": 146,
+			"application_id": 0,
+			"task_id": 146,
+			"data_in": 1.18374,
+			"data_out": 0.295936,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 543.052,
+			"input_upload_finish_time": 560.944,
+			"process_start_time": 560.944,
+			"process_finish_time": 560.949,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_b7_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["543.052", "560.944"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_1x7",
+			"total_task_id": 147,
+			"application_id": 0,
+			"task_id": 147,
+			"data_in": 0.295936,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 560.949,
+			"input_upload_finish_time": 0,
+			"process_start_time": 561.949,
+			"process_finish_time": 562.949,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_1x7_reduce"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_7x1",
+			"total_task_id": 148,
+			"application_id": 0,
+			"task_id": 148,
+			"data_in": 0,
+			"data_out": 0.36992,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 563.949,
+			"input_upload_finish_time": 573.949,
+			"process_start_time": 573.949,
+			"process_finish_time": 574.38,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_1x7"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["563.949", "573.949"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_3x3_2",
+			"total_task_id": 149,
+			"application_id": 0,
+			"task_id": 149,
+			"data_in": 0.36992,
+			"data_out": 0.08192,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 574.38,
+			"input_upload_finish_time": 0,
+			"process_start_time": 575.38,
+			"process_finish_time": 575.617,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_7x1"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/reduction_b_concat",
+			"total_task_id": 151,
+			"application_id": 0,
+			"task_id": 151,
+			"data_in": 0.344064,
+			"data_out": 0.393216,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 576.617,
+			"input_upload_finish_time": 588.364,
+			"process_start_time": 588.364,
+			"process_finish_time": 589.364,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_pool",
+				"1_inception_v4_phantom_start/reduction_b_3x3",
+				"1_inception_v4_phantom_start/reduction_b_3x3_2"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["576.617", "588.364"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_1x1_2",
+			"total_task_id": 152,
+			"application_id": 0,
+			"task_id": 152,
+			"data_in": 0.393216,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 589.364,
+			"input_upload_finish_time": 0,
+			"process_start_time": 590.364,
+			"process_finish_time": 590.473,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_pool_ave",
+			"total_task_id": 161,
+			"application_id": 0,
+			"task_id": 161,
+			"data_in": 0.393216,
+			"data_out": 0.393216,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 590.364,
+			"input_upload_finish_time": 602.986,
+			"process_start_time": 602.986,
+			"process_finish_time": 602.988,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["590.364", "602.986"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_1x1_4",
+			"total_task_id": 156,
+			"application_id": 0,
+			"task_id": 156,
+			"data_in": 0.393216,
+			"data_out": 0.098304,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 590.364,
+			"input_upload_finish_time": 602.986,
+			"process_start_time": 602.986,
+			"process_finish_time": 602.999,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["590.364", "602.986"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_1x1_3",
+			"total_task_id": 153,
+			"application_id": 0,
+			"task_id": 153,
+			"data_in": 0.393216,
+			"data_out": 0.098304,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 590.364,
+			"input_upload_finish_time": 602.986,
+			"process_start_time": 602.986,
+			"process_finish_time": 602.999,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/reduction_b_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["590.364", "602.986"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_1x3",
+			"total_task_id": 154,
+			"application_id": 0,
+			"task_id": 154,
+			"data_in": 0.098304,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 602.999,
+			"input_upload_finish_time": 0,
+			"process_start_time": 603.999,
+			"process_finish_time": 604.002,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_1x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_1x1",
+			"total_task_id": 162,
+			"application_id": 0,
+			"task_id": 162,
+			"data_in": 0.393216,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 602.988,
+			"input_upload_finish_time": 0,
+			"process_start_time": 603.988,
+			"process_finish_time": 604.988,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_3x1",
+			"total_task_id": 155,
+			"application_id": 0,
+			"task_id": 155,
+			"data_in": 0.098304,
+			"data_out": 0.065536,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 603.999,
+			"input_upload_finish_time": 614.654,
+			"process_start_time": 614.654,
+			"process_finish_time": 614.732,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_1x1_3"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["603.999", "614.654"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_3x1_2",
+			"total_task_id": 157,
+			"application_id": 0,
+			"task_id": 157,
+			"data_in": 0.098304,
+			"data_out": 0.114688,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 605.002,
+			"input_upload_finish_time": 615.657,
+			"process_start_time": 615.657,
+			"process_finish_time": 615.789,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_1x1_4"
+			],
+			"parent_upload_windows": {
+				"3": [
+					["605.002", "615.657"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_1x3_2",
+			"total_task_id": 158,
+			"application_id": 0,
+			"task_id": 158,
+			"data_in": 0.114688,
+			"data_out": 0.131072,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 615.789,
+			"input_upload_finish_time": 0,
+			"process_start_time": 616.789,
+			"process_finish_time": 616.852,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_3x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_1x3_3",
+			"total_task_id": 159,
+			"application_id": 0,
+			"task_id": 159,
+			"data_in": 0.131072,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 616.852,
+			"input_upload_finish_time": 0,
+			"process_start_time": 617.852,
+			"process_finish_time": 617.889,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_1x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_3x1_3",
+			"total_task_id": 160,
+			"application_id": 0,
+			"task_id": 160,
+			"data_in": 0.131072,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 617.852,
+			"input_upload_finish_time": 628.726,
+			"process_start_time": 628.726,
+			"process_finish_time": 628.734,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_1x3_2"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["617.852", "628.726"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c1_concat",
+			"total_task_id": 163,
+			"application_id": 0,
+			"task_id": 163,
+			"data_in": 0.32768,
+			"data_out": 0.393216,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 629.734,
+			"input_upload_finish_time": 650.608,
+			"process_start_time": 650.608,
+			"process_finish_time": 651.608,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_1x1_2",
+				"1_inception_v4_phantom_start/inception_c1_1x1",
+				"1_inception_v4_phantom_start/inception_c1_1x3",
+				"1_inception_v4_phantom_start/inception_c1_3x1",
+				"1_inception_v4_phantom_start/inception_c1_1x3_3",
+				"1_inception_v4_phantom_start/inception_c1_3x1_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["629.734", "639.734"]
+				],
+				"4": [
+					["629.734", "640.171"],
+					["640.171", "650.608"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_1x1_2",
+			"total_task_id": 164,
+			"application_id": 0,
+			"task_id": 164,
+			"data_in": 0.393216,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 651.608,
+			"input_upload_finish_time": 0,
+			"process_start_time": 652.608,
+			"process_finish_time": 652.716,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_pool_ave",
+			"total_task_id": 173,
+			"application_id": 0,
+			"task_id": 173,
+			"data_in": 0.393216,
+			"data_out": 0.393216,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 652.608,
+			"input_upload_finish_time": 665.229,
+			"process_start_time": 665.229,
+			"process_finish_time": 665.232,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["652.608", "665.229"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_1x1_4",
+			"total_task_id": 168,
+			"application_id": 0,
+			"task_id": 168,
+			"data_in": 0.393216,
+			"data_out": 0.098304,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 652.608,
+			"input_upload_finish_time": 665.229,
+			"process_start_time": 665.229,
+			"process_finish_time": 665.243,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["652.608", "665.229"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_1x1_3",
+			"total_task_id": 165,
+			"application_id": 0,
+			"task_id": 165,
+			"data_in": 0.393216,
+			"data_out": 0.098304,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 652.608,
+			"input_upload_finish_time": 665.229,
+			"process_start_time": 665.229,
+			"process_finish_time": 665.243,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c1_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["652.608", "665.229"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_1x3",
+			"total_task_id": 166,
+			"application_id": 0,
+			"task_id": 166,
+			"data_in": 0.098304,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 665.243,
+			"input_upload_finish_time": 0,
+			"process_start_time": 666.243,
+			"process_finish_time": 666.245,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_1x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_3x1",
+			"total_task_id": 167,
+			"application_id": 0,
+			"task_id": 167,
+			"data_in": 0.098304,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 665.243,
+			"input_upload_finish_time": 0,
+			"process_start_time": 666.243,
+			"process_finish_time": 666.249,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_1x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_3x1_2",
+			"total_task_id": 169,
+			"application_id": 0,
+			"task_id": 169,
+			"data_in": 0.098304,
+			"data_out": 0.114688,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 665.243,
+			"input_upload_finish_time": 0,
+			"process_start_time": 666.243,
+			"process_finish_time": 666.254,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_1x1_4"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_1x1",
+			"total_task_id": 174,
+			"application_id": 0,
+			"task_id": 174,
+			"data_in": 0.393216,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 665.232,
+			"input_upload_finish_time": 0,
+			"process_start_time": 666.232,
+			"process_finish_time": 667.232,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_1x3_2",
+			"total_task_id": 170,
+			"application_id": 0,
+			"task_id": 170,
+			"data_in": 0.114688,
+			"data_out": 0.131072,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 666.254,
+			"input_upload_finish_time": 0,
+			"process_start_time": 667.254,
+			"process_finish_time": 667.259,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_3x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_1x3_3",
+			"total_task_id": 171,
+			"application_id": 0,
+			"task_id": 171,
+			"data_in": 0.131072,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 667.259,
+			"input_upload_finish_time": 0,
+			"process_start_time": 668.259,
+			"process_finish_time": 668.262,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_1x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_3x1_3",
+			"total_task_id": 172,
+			"application_id": 0,
+			"task_id": 172,
+			"data_in": 0.131072,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 667.259,
+			"input_upload_finish_time": 0,
+			"process_start_time": 668.259,
+			"process_finish_time": 668.268,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_1x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c2_concat",
+			"total_task_id": 175,
+			"application_id": 0,
+			"task_id": 175,
+			"data_in": 0.32768,
+			"data_out": 0.393216,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 669.268,
+			"input_upload_finish_time": 690.142,
+			"process_start_time": 690.142,
+			"process_finish_time": 691.142,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_1x1_2",
+				"1_inception_v4_phantom_start/inception_c2_1x1",
+				"1_inception_v4_phantom_start/inception_c2_1x3",
+				"1_inception_v4_phantom_start/inception_c2_3x1",
+				"1_inception_v4_phantom_start/inception_c2_1x3_3",
+				"1_inception_v4_phantom_start/inception_c2_3x1_3"
+			],
+			"parent_upload_windows": {
+				"1": [
+					["669.268", "679.268"]
+				],
+				"4": [
+					["669.268", "679.705"],
+					["679.705", "690.142"]
+				],
+				"3": [
+					["669.268", "679.705"],
+					["679.705", "690.142"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_1x1_2",
+			"total_task_id": 176,
+			"application_id": 0,
+			"task_id": 176,
+			"data_in": 0.393216,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 691.142,
+			"input_upload_finish_time": 0,
+			"process_start_time": 692.142,
+			"process_finish_time": 692.25,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_pool_ave",
+			"total_task_id": 185,
+			"application_id": 0,
+			"task_id": 185,
+			"data_in": 0.393216,
+			"data_out": 0.393216,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 692.142,
+			"input_upload_finish_time": 704.763,
+			"process_start_time": 704.763,
+			"process_finish_time": 704.765,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["692.142", "704.763"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_1x1_4",
+			"total_task_id": 180,
+			"application_id": 0,
+			"task_id": 180,
+			"data_in": 0.393216,
+			"data_out": 0.098304,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 692.142,
+			"input_upload_finish_time": 704.763,
+			"process_start_time": 704.763,
+			"process_finish_time": 704.776,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["692.142", "704.763"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_1x1_3",
+			"total_task_id": 177,
+			"application_id": 0,
+			"task_id": 177,
+			"data_in": 0.393216,
+			"data_out": 0.098304,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 692.142,
+			"input_upload_finish_time": 704.763,
+			"process_start_time": 704.763,
+			"process_finish_time": 704.776,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c2_concat"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["692.142", "704.763"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_1x3",
+			"total_task_id": 178,
+			"application_id": 0,
+			"task_id": 178,
+			"data_in": 0.098304,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 704.776,
+			"input_upload_finish_time": 0,
+			"process_start_time": 705.776,
+			"process_finish_time": 705.779,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_1x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_3x1",
+			"total_task_id": 179,
+			"application_id": 0,
+			"task_id": 179,
+			"data_in": 0.098304,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 704.776,
+			"input_upload_finish_time": 0,
+			"process_start_time": 705.776,
+			"process_finish_time": 705.783,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_1x1_3"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_3x1_2",
+			"total_task_id": 181,
+			"application_id": 0,
+			"task_id": 181,
+			"data_in": 0.098304,
+			"data_out": 0.114688,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 704.776,
+			"input_upload_finish_time": 0,
+			"process_start_time": 705.776,
+			"process_finish_time": 705.788,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_1x1_4"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_1x1",
+			"total_task_id": 186,
+			"application_id": 0,
+			"task_id": 186,
+			"data_in": 0.393216,
+			"data_out": 0,
+			"can_offload": 1,
+			"chosen_node_id": 1,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 704.765,
+			"input_upload_finish_time": 0,
+			"process_start_time": 705.765,
+			"process_finish_time": 706.765,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_pool_ave"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_1x3_2",
+			"total_task_id": 182,
+			"application_id": 0,
+			"task_id": 182,
+			"data_in": 0.114688,
+			"data_out": 0.131072,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 705.788,
+			"input_upload_finish_time": 0,
+			"process_start_time": 706.788,
+			"process_finish_time": 706.793,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_3x1_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_1x3_3",
+			"total_task_id": 183,
+			"application_id": 0,
+			"task_id": 183,
+			"data_in": 0.131072,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 706.793,
+			"input_upload_finish_time": 0,
+			"process_start_time": 707.793,
+			"process_finish_time": 707.796,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_1x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_3x1_3",
+			"total_task_id": 184,
+			"application_id": 0,
+			"task_id": 184,
+			"data_in": 0.131072,
+			"data_out": 0.065536,
+			"can_offload": 1,
+			"chosen_node_id": 3,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 706.793,
+			"input_upload_finish_time": 0,
+			"process_start_time": 707.793,
+			"process_finish_time": 707.802,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_1x3_2"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/inception_c3_concat",
+			"total_task_id": 187,
+			"application_id": 0,
+			"task_id": 187,
+			"data_in": 0.32768,
+			"data_out": 0.393216,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 708.802,
+			"input_upload_finish_time": 728.93,
+			"process_start_time": 728.93,
+			"process_finish_time": 729.93,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_1x1_2",
+				"1_inception_v4_phantom_start/inception_c3_1x1",
+				"1_inception_v4_phantom_start/inception_c3_1x3",
+				"1_inception_v4_phantom_start/inception_c3_3x1",
+				"1_inception_v4_phantom_start/inception_c3_1x3_3",
+				"1_inception_v4_phantom_start/inception_c3_3x1_3"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["708.802", "719.238"]
+				],
+				"3": [
+					["708.802", "718.866"],
+					["718.866", "728.93"]
+				],
+				"1": [
+					["708.802", "718.802"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/pool_8x8_s1",
+			"total_task_id": 188,
+			"application_id": 0,
+			"task_id": 188,
+			"data_in": 0.393216,
+			"data_out": 0.393216,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 729.93,
+			"input_upload_finish_time": 0,
+			"process_start_time": 730.93,
+			"process_finish_time": 730.932,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/inception_c3_concat"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/pool_8x8_s1_drop",
+			"total_task_id": 189,
+			"application_id": 0,
+			"task_id": 189,
+			"data_in": 0.393216,
+			"data_out": 0.393216,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 731.932,
+			"input_upload_finish_time": 744.553,
+			"process_start_time": 744.553,
+			"process_finish_time": 744.575,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/pool_8x8_s1"
+			],
+			"parent_upload_windows": {
+				"4": [
+					["731.932", "744.553"]
+				]
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/classifier",
+			"total_task_id": 190,
+			"application_id": 0,
+			"task_id": 190,
+			"data_in": 0.393216,
+			"data_out": 0.004,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 744.575,
+			"input_upload_finish_time": 0,
+			"process_start_time": 745.575,
+			"process_finish_time": 756.562,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/pool_8x8_s1_drop"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_start/prob",
+			"total_task_id": 191,
+			"application_id": 0,
+			"task_id": 191,
+			"data_in": 0.004,
+			"data_out": 0.004,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 756.562,
+			"input_upload_finish_time": 0,
+			"process_start_time": 757.562,
+			"process_finish_time": 758.562,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/classifier"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "1_inception_v4_phantom_end",
+			"total_task_id": 192,
+			"application_id": 0,
+			"task_id": 192,
+			"data_in": 0.004,
+			"data_out": 0,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 758.562,
+			"input_upload_finish_time": 0,
+			"process_start_time": 759.562,
+			"process_finish_time": 760.562,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"1_inception_v4_phantom_start/prob"
+			],
+			"parent_upload_windows": {
+			}
+		}
+	],
+	"edge_upload_windows": {
+		"0_1": [
+		],
+		"0_2": [
+		],
+		"0_3": [
+		],
+		"0_4": [
+		],
+		"1_2": [
+			[59.7247, 69.7247],
+			[158.64, 171.776],
+			[225.396, 243.287],
+			[261.151, 271.151],
+			[275.124, 293.015],
+			[299.06, 309.06],
+			[313.033, 330.925],
+			[359.023, 369.023],
+			[371.023, 388.914],
+			[394.96, 404.96],
+			[408.933, 426.824],
+			[443.208, 453.208],
+			[457.181, 475.072],
+			[493.142, 503.142],
+			[505.142, 523.034],
+			[529.079, 539.079],
+			[590.364, 602.986],
+			[629.734, 639.734],
+			[652.608, 665.229],
+			[669.268, 679.268],
+			[692.142, 704.763]
+		],
+		"1_3": [
+		],
+		"1_4": [
+			[46.7113, 56.7113],
+			[86.1099, 97.9474],
+			[101.98, 112.44],
+			[114.44, 126.277],
+			[130.31, 140.769],
+			[142.769, 154.607],
+			[708.802, 718.802]
+		],
+		"2_3": [
+			[158.64, 168.64],
+			[183.776, 206.32],
+			[210.436, 223.396],
+			[225.396, 243.287],
+			[244.303, 255.783],
+			[275.124, 293.015],
+			[299.06, 311.033],
+			[313.033, 330.925],
+			[345.655, 355.655],
+			[371.023, 388.914],
+			[394.96, 406.933],
+			[408.933, 426.824],
+			[429.84, 439.84],
+			[457.181, 475.072],
+			[479.092, 490.818],
+			[505.142, 523.034],
+			[529.079, 541.052],
+			[543.052, 560.944],
+			[576.617, 588.364],
+			[590.364, 602.986],
+			[605.002, 615.657],
+			[652.608, 665.229],
+			[669.268, 679.705],
+			[679.705, 690.142],
+			[692.142, 704.763]
+		],
+		"2_4": [
+			[15.616, 25.616],
+			[30.7113, 40.7113],
+			[70.9739, 84.1099],
+			[158.64, 171.776],
+			[171.776, 181.776],
+			[183.776, 206.32],
+			[210.436, 222.409],
+			[225.396, 243.287],
+			[261.151, 273.124],
+			[275.124, 293.015],
+			[299.06, 311.033],
+			[313.033, 330.925],
+			[331.929, 343.655],
+			[371.023, 388.914],
+			[394.96, 406.933],
+			[408.933, 426.824],
+			[443.208, 455.181],
+			[457.181, 475.072],
+			[478.076, 488.076],
+			[505.142, 523.034],
+			[529.079, 541.052],
+			[543.052, 560.944],
+			[563.949, 573.949],
+			[590.364, 602.986],
+			[603.999, 614.654],
+			[617.852, 628.726],
+			[629.734, 640.171],
+			[640.171, 650.608],
+			[652.608, 665.229],
+			[669.268, 679.705],
+			[679.705, 690.142],
+			[692.142, 704.763],
+			[708.802, 719.238],
+			[731.932, 744.553]
+		],
+		"3_4": [
+			[46.7113, 56.7113],
+			[70.9739, 80.9739],
+			[86.1099, 97.9474],
+			[101.98, 111.98],
+			[114.44, 126.277],
+			[130.31, 140.31],
+			[142.769, 154.607],
+			[708.802, 718.866],
+			[718.866, 728.93]
+		]
+	},
+	"node_types": {
+		"0": "cloud",
+		"1": "edge",
+		"2": "mobile",
+		"3": "edge",
+		"4": "edge"
+	}
+}

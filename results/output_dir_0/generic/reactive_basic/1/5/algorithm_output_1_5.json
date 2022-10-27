@@ -1,0 +1,126 @@
+{
+	"application_count": 1,
+	"completed_application_count": 1,
+	"total_task_count": 3,
+	"finish_time": 2206.33,
+	"completed_task_count": 3,
+	"completed_tasks": [
+		{
+			"task_name": "APP_0_Input_Layer_0",
+			"total_task_id": 0,
+			"application_id": 0,
+			"task_id": 0,
+			"data_in": 40,
+			"data_out": 41,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 1,
+			"input_upload_finish_time": 1,
+			"process_start_time": 1,
+			"process_finish_time": 134.333,
+			"output_upload_start_time": 134.333,
+			"output_upload_finish_time": 417.667,
+			"parents": [
+			],
+			"parent_upload_windows": {
+				"-1": [
+					["134.333", "417.667"]
+				]
+			}
+		},
+		{
+			"task_name": "APP_0_Inner_Layer_0:0",
+			"total_task_id": 1,
+			"application_id": 0,
+			"task_id": 1,
+			"data_in": 22,
+			"data_out": 42,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 418.667,
+			"input_upload_finish_time": 702,
+			"process_start_time": 702,
+			"process_finish_time": 1102,
+			"output_upload_start_time": 1102,
+			"output_upload_finish_time": 1392,
+			"parents": [
+				"APP_0_Input_Layer_0"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["418.667", "702"]
+				],
+				"-1": [
+					["1102", "1392"]
+				]
+			}
+		},
+		{
+			"task_name": "APP_0_Output_Layer_0",
+			"total_task_id": 2,
+			"application_id": 0,
+			"task_id": 2,
+			"data_in": 22,
+			"data_out": 7,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 1393,
+			"input_upload_finish_time": 1683,
+			"process_start_time": 1683,
+			"process_finish_time": 2149.67,
+			"output_upload_start_time": 2149.67,
+			"output_upload_finish_time": 2206.33,
+			"parents": [
+				"APP_0_Inner_Layer_0:0"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["1393", "1683"]
+				],
+				"-1": [
+					["2149.67", "2206.33"]
+				]
+			}
+		}
+	],
+	"edge_upload_windows": {
+		"0_1": [
+		],
+		"0_2": [
+		],
+		"0_3": [
+		],
+		"0_4": [
+		],
+		"1_2": [
+		],
+		"1_3": [
+		],
+		"1_4": [
+		],
+		"2_3": [
+		],
+		"2_4": [
+			[134.333, 417.667],
+			[418.667, 702],
+			[1102, 1392],
+			[1393, 1683],
+			[2149.67, 2206.33]
+		],
+		"3_4": [
+		]
+	},
+	"node_types": {
+		"0": "cloud",
+		"1": "edge",
+		"2": "mobile",
+		"3": "edge",
+		"4": "edge"
+	}
+}

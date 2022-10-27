@@ -1,0 +1,118 @@
+{
+	"application_count": 1,
+	"completed_application_count": 1,
+	"total_task_count": 3,
+	"finish_time": 2733,
+	"completed_task_count": 3,
+	"completed_tasks": [
+		{
+			"task_name": "APP_0_Input_Layer_0",
+			"total_task_id": 0,
+			"application_id": 0,
+			"task_id": 0,
+			"data_in": 40,
+			"data_out": 41,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 1,
+			"input_upload_finish_time": 1,
+			"process_start_time": 1,
+			"process_finish_time": 134.333,
+			"output_upload_start_time": 134.333,
+			"output_upload_finish_time": 417.667,
+			"parents": [
+			],
+			"parent_upload_windows": {
+				"-1": [
+					["134.333", "417.667"]
+				]
+			}
+		},
+		{
+			"task_name": "APP_0_Inner_Layer_0:0",
+			"total_task_id": 1,
+			"application_id": 0,
+			"task_id": 1,
+			"data_in": 22,
+			"data_out": 42,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 0,
+			"input_upload_finish_time": 0,
+			"process_start_time": 418.667,
+			"process_finish_time": 1918.67,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"APP_0_Input_Layer_0"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "APP_0_Output_Layer_0",
+			"total_task_id": 2,
+			"application_id": 0,
+			"task_id": 2,
+			"data_in": 22,
+			"data_out": 7,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 1919.67,
+			"input_upload_finish_time": 2209.67,
+			"process_start_time": 2209.67,
+			"process_finish_time": 2676.33,
+			"output_upload_start_time": 2676.33,
+			"output_upload_finish_time": 2733,
+			"parents": [
+				"APP_0_Inner_Layer_0:0"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["1919.67", "2209.67"]
+				],
+				"-1": [
+					["2676.33", "2733"]
+				]
+			}
+		}
+	],
+	"edge_upload_windows": {
+		"0_1": [
+		],
+		"0_2": [
+		],
+		"0_3": [
+		],
+		"0_4": [
+		],
+		"1_2": [
+		],
+		"1_3": [
+		],
+		"1_4": [
+		],
+		"2_3": [
+		],
+		"2_4": [
+			[134.333, 417.667],
+			[1919.67, 2209.67],
+			[2676.33, 2733]
+		],
+		"3_4": [
+		]
+	},
+	"node_types": {
+		"0": "cloud",
+		"1": "edge",
+		"2": "mobile",
+		"3": "edge",
+		"4": "edge"
+	}
+}

@@ -1,0 +1,180 @@
+{
+	"application_count": 9,
+	"completed_application_count": 1,
+	"total_task_count": 75,
+	"finish_time": 9505,
+	"completed_task_count": 6,
+	"completed_tasks": [
+		{
+			"task_name": "APP_0_Input_Layer_0",
+			"total_task_id": 0,
+			"application_id": 0,
+			"task_id": 0,
+			"data_in": 40,
+			"data_out": 11,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 0,
+			"input_upload_finish_time": 0,
+			"process_start_time": 1,
+			"process_finish_time": 1501,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "APP_0_Inner_Layer_0:0",
+			"total_task_id": 1,
+			"application_id": 0,
+			"task_id": 1,
+			"data_in": 36,
+			"data_out": 25,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 1501,
+			"input_upload_finish_time": 0,
+			"process_start_time": 1502,
+			"process_finish_time": 3252,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"APP_0_Input_Layer_0"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "APP_0_Inner_Layer_1:0",
+			"total_task_id": 2,
+			"application_id": 0,
+			"task_id": 2,
+			"data_in": 19,
+			"data_out": 35,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 3252,
+			"input_upload_finish_time": 0,
+			"process_start_time": 3253,
+			"process_finish_time": 5253,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"APP_0_Inner_Layer_0:0"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "APP_0_Output_Layer_0",
+			"total_task_id": 3,
+			"application_id": 0,
+			"task_id": 3,
+			"data_in": 30,
+			"data_out": 27,
+			"can_offload": 1,
+			"chosen_node_id": 0,
+			"source_node_id": 2,
+			"chosen_node_type": "cloud",
+			"input_upload_start_time": 5254,
+			"input_upload_finish_time": 6296.22,
+			"process_start_time": 6296.22,
+			"process_finish_time": 6696.22,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"APP_0_Inner_Layer_1:0"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["5254", "6296.22"]
+				]
+			}
+		},
+		{
+			"task_name": "APP_3_Input_Layer_0",
+			"total_task_id": 21,
+			"application_id": 3,
+			"task_id": 0,
+			"data_in": 8,
+			"data_out": 4,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 0,
+			"input_upload_finish_time": 0,
+			"process_start_time": 5254,
+			"process_finish_time": 7254,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "APP_3_Inner_Layer_0:0",
+			"total_task_id": 22,
+			"application_id": 3,
+			"task_id": 1,
+			"data_in": 24,
+			"data_out": 30,
+			"can_offload": 1,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 7254,
+			"input_upload_finish_time": 0,
+			"process_start_time": 7255,
+			"process_finish_time": 9505,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"APP_3_Input_Layer_0"
+			],
+			"parent_upload_windows": {
+			}
+		}
+	],
+	"edge_upload_windows": {
+		"0_1": [
+		],
+		"0_2": [
+			[5254, 6296.22],
+			[13259, 14356.8],
+			[14356.8, 15454.6]
+		],
+		"0_3": [
+		],
+		"0_4": [
+		],
+		"1_2": [
+		],
+		"1_3": [
+		],
+		"1_4": [
+		],
+		"2_3": [
+		],
+		"2_4": [
+		],
+		"3_4": [
+		]
+	},
+	"node_types": {
+		"0": "cloud",
+		"1": "edge",
+		"2": "mobile",
+		"3": "edge",
+		"4": "edge"
+	}
+}

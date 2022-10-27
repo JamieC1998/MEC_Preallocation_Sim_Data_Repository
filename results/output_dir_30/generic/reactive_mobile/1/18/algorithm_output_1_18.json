@@ -1,0 +1,183 @@
+{
+	"application_count": 1,
+	"completed_application_count": 1,
+	"total_task_count": 5,
+	"finish_time": 3350.67,
+	"completed_task_count": 5,
+	"completed_tasks": [
+		{
+			"task_name": "APP_0_Input_Layer_0",
+			"total_task_id": 0,
+			"application_id": 0,
+			"task_id": 0,
+			"data_in": 15,
+			"data_out": 4,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 1,
+			"input_upload_finish_time": 1,
+			"process_start_time": 1,
+			"process_finish_time": 201,
+			"output_upload_start_time": 201,
+			"output_upload_finish_time": 237.667,
+			"parents": [
+			],
+			"parent_upload_windows": {
+				"-1": [
+					["201", "237.667"]
+				]
+			}
+		},
+		{
+			"task_name": "APP_0_Inner_Layer_0:0",
+			"total_task_id": 1,
+			"application_id": 0,
+			"task_id": 1,
+			"data_in": 41,
+			"data_out": 29,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 238.667,
+			"input_upload_finish_time": 275.333,
+			"process_start_time": 275.333,
+			"process_finish_time": 675.333,
+			"output_upload_start_time": 675.333,
+			"output_upload_finish_time": 878.667,
+			"parents": [
+				"APP_0_Input_Layer_0"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["238.667", "275.333"]
+				],
+				"-1": [
+					["675.333", "878.667"]
+				]
+			}
+		},
+		{
+			"task_name": "APP_0_Inner_Layer_1:1",
+			"total_task_id": 3,
+			"application_id": 0,
+			"task_id": 3,
+			"data_in": 49,
+			"data_out": 18,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 879.667,
+			"input_upload_finish_time": 1083,
+			"process_start_time": 1083,
+			"process_finish_time": 1283,
+			"output_upload_start_time": 1283,
+			"output_upload_finish_time": 1413,
+			"parents": [
+				"APP_0_Inner_Layer_0:0"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["879.667", "1083"]
+				],
+				"-1": [
+					["1283", "1413"]
+				]
+			}
+		},
+		{
+			"task_name": "APP_0_Inner_Layer_1:0",
+			"total_task_id": 2,
+			"application_id": 0,
+			"task_id": 2,
+			"data_in": 18,
+			"data_out": 17,
+			"can_offload": 0,
+			"chosen_node_id": 2,
+			"source_node_id": 2,
+			"chosen_node_type": "mobile",
+			"input_upload_start_time": 0,
+			"input_upload_finish_time": 0,
+			"process_start_time": 879.667,
+			"process_finish_time": 2379.67,
+			"output_upload_start_time": 0,
+			"output_upload_finish_time": 0,
+			"parents": [
+				"APP_0_Inner_Layer_0:0"
+			],
+			"parent_upload_windows": {
+			}
+		},
+		{
+			"task_name": "APP_0_Output_Layer_0",
+			"total_task_id": 4,
+			"application_id": 0,
+			"task_id": 4,
+			"data_in": 45,
+			"data_out": 46,
+			"can_offload": 1,
+			"chosen_node_id": 4,
+			"source_node_id": 2,
+			"chosen_node_type": "edge",
+			"input_upload_start_time": 2380.67,
+			"input_upload_finish_time": 2634,
+			"process_start_time": 2634,
+			"process_finish_time": 3034,
+			"output_upload_start_time": 3034,
+			"output_upload_finish_time": 3350.67,
+			"parents": [
+				"APP_0_Inner_Layer_1:0",
+				"APP_0_Inner_Layer_1:1"
+			],
+			"parent_upload_windows": {
+				"2": [
+					["2380.67", "2504"],
+					["2504", "2634"]
+				],
+				"-1": [
+					["3034", "3350.67"]
+				]
+			}
+		}
+	],
+	"edge_upload_windows": {
+		"0_1": [
+		],
+		"0_2": [
+		],
+		"0_3": [
+		],
+		"0_4": [
+		],
+		"1_2": [
+		],
+		"1_3": [
+		],
+		"1_4": [
+		],
+		"2_3": [
+		],
+		"2_4": [
+			[201, 237.667],
+			[238.667, 275.333],
+			[675.333, 878.667],
+			[879.667, 1083],
+			[1283, 1413],
+			[2380.67, 2504],
+			[2504, 2634],
+			[3034, 3350.67]
+		],
+		"3_4": [
+		]
+	},
+	"node_types": {
+		"0": "cloud",
+		"1": "edge",
+		"2": "mobile",
+		"3": "edge",
+		"4": "edge"
+	}
+}
